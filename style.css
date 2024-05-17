@@ -149,8 +149,60 @@
     margin: auto;
   }
   
+  div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative
+  }
+
+  div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  
+/*configuracoes do aside*/
+  aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+  }
+
+  aside > h4 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  aside > ul {
+    list-style-type: '\2714\00A0\00A'; /*\numero do emoji\codigo de espaco\codigo de espaco*/
+    list-style-position: inside; /*configurar a lista dentro da caixa*/
+    columns: 2; /*configurar a lista pra duas colunas*/
+  }
+
 /*configuracoes de footer*/
   footer {
     background-color: var(--cor5);
     color: var(--cor0);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1)
   }
